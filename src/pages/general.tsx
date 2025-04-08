@@ -76,6 +76,7 @@ export function General() {
                             </div>
                         </label>
                     </div>
+                    <button className="w-20 bg-blue-700 rounded-lg py-2 text-white text-center">Save</button>
                 </div>
             </div>
         </div>
