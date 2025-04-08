@@ -26,8 +26,22 @@ export function Biling() {
                     </div>
                 </div>
             </div>
-            <div>
-
+            <div className="flex flex-col gap-10">
+                <h3 className="text-4xl">Cloud storage</h3>
+                <div className="flex gap-20">
+                    <div className="flex flex-col">
+                        <h3 className="font-bold text-3xl">150 GB</h3>
+                        <p>storage</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <h3 className="font-bold text-3xl">80 GB</h3>
+                        <p>used</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <h3 className="font-bold text-3xl">70 GB</h3>
+                        <p>free</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
