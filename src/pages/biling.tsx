@@ -1,6 +1,15 @@
 import { CreditCard, User } from "lucide-react";
+import Swal from "sweetalert2";
 
 export function Biling() {
+
+    const buy = () => {
+        Swal.fire({
+            title: "Comprado",
+            icon: "success"
+        });
+    }
+
     return (
         <div className="w-full h-full p-5 pt-10">
             <div>
@@ -22,7 +31,7 @@ export function Biling() {
                         </div>
                         <h3 className="text-5xl font-bold">15/15 <span className="text-xl">used</span></h3>
                         <p>To add more users to the workspace you need to buy more seats</p>
-                        <button className="bg-blue-700 rounded-lg py-2 px-12 text-center text-white">Buy</button>
+                        <button className="bg-blue-700 rounded-lg py-2 px-12 text-center text-white" onClick={buy}>Buy</button>
                     </div>
                 </div>
             </div>

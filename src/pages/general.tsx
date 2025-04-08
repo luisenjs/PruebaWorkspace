@@ -1,5 +1,6 @@
 import { Card } from "@/components/card";
 import { Pen } from "lucide-react";
+import Swal from "sweetalert2";
 
 const admins = [
     {
@@ -15,8 +16,16 @@ const admins = [
 ]
 
 export function General() {
+
+    const save = () => {
+        Swal.fire({
+            title: "Guardado",
+            icon: "success"
+        });
+    }
+
     return (
-        <div className="h-full w-full">
+        <div className="h-full w-full px-5">
             <div className="flex items-center px-3 py-6 gap-5">
                 <img src="/src/assets/workspace-avatar.svg" alt="" />
                 <h2 className="text-4xl font-bold">Workspace name</h2>
@@ -76,7 +85,7 @@ export function General() {
                             </div>
                         </label>
                     </div>
-                    <button className="w-20 bg-blue-700 rounded-lg py-2 text-white text-center">Save</button>
+                    <button className="w-20 bg-blue-700 rounded-lg py-2 text-white text-center" onClick={save}>Save</button>
                 </div>
             </div>
         </div>
